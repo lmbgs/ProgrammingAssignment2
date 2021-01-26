@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This functions create a specail "matrix" that can chache its inverse
+## base on sample function makeVector and chacheVector
 
-## Write a short comment describing this function
+## Create special "matrix" object
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -18,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Calculate matrix inverse, 
+## if cached skip calculation and return cached value
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinverse()
